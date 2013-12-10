@@ -1,110 +1,73 @@
 [
     {
-        "status": "ok",
-        "servers":
-                [
-                    {
-                        "id": "VR01",
-                        "servername": "Server_1",
-                        "cpu": 45, "mem": 25,
-                        "diskIO": 0, "bandwith": 200
-                    }
+        "stat": "ok",
+        "id": "VR01",
+        "servername": "Server_1",
+        "cpu": 45, "mem": 25,
+        "diskIO": 0, "bandwith": 200
 
-                ]
-    },
-    {
-        "status": "attention",
-        "servers":
-                [
-                    {
-                        "id": "VR02",
-                        "servername": "Server_02",
-                        "cpu": 55, "mem": 35,
-                        "diskIO": 1, "bandwith": 2000
-                    }
-                ]
+
 
     },
     {
-        "status": "warning",
-        "servers":
-                [
-                    {
-                        "id": "VR03",
-                        "servername": "Server_03",
-                        "cpu": 98, "mem": 85,
-                        "diskIO": 1,
-                        "bandwith": 2000
-                    }
-                ]
+        "stat": "attention",
+        "id": "VR02",
+        "servername": "Server_02",
+        "cpu": 55, "mem": 35,
+        "diskIO": 1, "bandwith": 2000
+
 
     },
     {
-        "status": "dead",
-        "servers":
-                [
-                    {
-                        "id": "VR04",
-                        "servername": "Server_04",
-                        "cpu": 0, "mem": 0,
-                        "diskIO": 0,
-                        "bandwith": 0
-                    }
-                ]
+        "stat": "warning",
+        "id": "VR03",
+        "servername": "Server_03",
+        "cpu": 98, "mem": 85,
+        "diskIO": 1,
+        "bandwith": 2000
 
     },
     {
-        "status": "ok",
-        "servers":
-                [
-                    {
-                        "id": "VR05",
-                        "servername": "Server_05",
-                        "cpu": 45, "mem": 25,
-                        "diskIO": 0, "bandwith": 200
-                    }
-
-                ]
+        "stat": "dead",
+        "id": "VR04",
+        "servername": "Server_04",
+        "cpu": 0, "mem": 0,
+        "diskIO": 0,
+        "bandwith": 0
     },
     {
-        "status": "attention",
-        "servers":
-                [
-                    {
-                        "id": "VR06",
-                        "servername": "Server_06",
-                        "cpu": 55, "mem": 35,
-                        "diskIO": 1, "bandwith": 2000
-                    }
-                ]
+        "stat": "ok",
+        "id": "VR05",
+        "servername": "Server_05",
+        "cpu": 45, "mem": 25,
+        "diskIO": 0, "bandwith": 200
 
     },
     {
-        "status": "warning",
-        "servers":
-                [
-                    {
-                        "id": "VR07",
-                        "servername": "Server_07",
-                        "cpu": 98, "mem": 85,
-                        "diskIO": 1,
-                        "bandwith": 2000
-                    }
-                ]
+        "stat": "attention",
+        "id": "VR06",
+        "servername": "Server_06",
+        "cpu": 55, "mem": 35,
+        "diskIO": 1, "bandwith": 2000
+
 
     },
     {
-        "status": "dead",
-        "servers":
-                [
-                    {
-                        "id": "VR08",
-                        "servername": "Server_08",
-                        "cpu": 0, "mem": 0,
-                        "diskIO": 0,
-                        "bandwith": 0
-                    }
-                ]
+        "stat": "warning",
+        "id": "VR07",
+        "servername": "Server_07",
+        "cpu": 98, "mem": 85,
+        "diskIO": 1,
+        "bandwith": 2000
 
+    },
+    {
+        "stat": "dead",
+        "id": "VR08",
+        "servername": "Server_08",
+        "cpu": 0, "mem": 0,
+        "diskIO": 0,
+        "bandwith": 0
     }
+
 ]

@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 
 <head> 
@@ -13,17 +12,17 @@
     <script src="http://mbostock.github.com/d3/d3.v2.min.js"></script>
 
 
-    <script>
-        var width = 1000,
-            height =1000,
-            margin = 50;
+      <script>
+        var width = 900,
+                height = 300,
+                margin = 50;
 
-        var cwidth = 400, cheight = 400, cmargin = 10, maxr = 4;
+        var cwidth = 400, cheight = 300, cmargin = 10, maxr = 4;
 
-        var svg = d3.select("body").append("svg");
-        var x = d3.scale.linear().domain([0, 5]).range([cmargin, cwidth - margin]);
-        var y = d3.scale.linear().domain([-10, 10]).range([cheight - cmargin, cmargin]);
-        var o = d3.scale.linear().domain([0, 3000]).range([.5, 1]);
+        var svg = d3.select(".svg_element").append("svg");
+        var x = 100;
+        var y = 100;
+        var o = 100;
 
 
         //var status = ["ok",  "attention", "warning", "dead"];
@@ -33,8 +32,8 @@
 
             data = d3.nest()
                     .key(function(d) {
-                return d.status;
-                
+                return d.stat;
+
             })
                     .sortKeys(d3.descending)
                     .entries(json);
@@ -85,8 +84,8 @@
             });
 
             // finally, we animate our marks in position
-            
-            g.selectAll("circle").transition().duration(1000)
+
+            g.selectAll("circle").transition().duration(100)
                     .attr("r", 10)
                     .attr("cx", function(d) {
                 return x(+d.cpu);
@@ -105,7 +104,6 @@
         });
 
     </script>
-
 
 </body>
 </html>

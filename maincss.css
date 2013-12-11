@@ -1,0 +1,41 @@
+/* 
+    Document   : maincss
+    Created on : Dec 11, 2013, 8:38:22 AM
+    Author     : comet
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body{ 
+    line-height: 1.5em;
+    font-family: Arial;
+    font-size: 18px;
+    background-color: black;
+   
+    }
+
+    
+    .top{
+        height: 75px;
+        width: auto;
+         background-color: black;
+        
+    }
+    .svg_element{
+        height: 750px;
+        width: auto;
+         background-color: white;
+        
+    }
+    
+     .bottom{
+        height: 175px;
+        width: auto;
+         background-color: black;
+        
+    }
+    

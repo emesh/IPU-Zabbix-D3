@@ -68,6 +68,126 @@
         "cpu": 0, "mem": 0,
         "diskIO": 0,
         "bandwith": 0
+    },
+    {
+        "stat": "ok",
+        "id": "VR09",
+        "servername": "Server_9",
+        "cpu": 45, "mem": 25,
+        "diskIO": 0, "bandwith": 200
+
+
+
+    }, 
+    {
+        "stat": "ok",
+        "id": "VR20",
+        "servername": "Server_10",
+        "cpu": 45, "mem": 25,
+        "diskIO": 0, "bandwith": 200
+
+
+
+    }, 
+    {
+        "stat": "ok",
+        "id": "VR11",
+        "servername": "Server_11",
+        "cpu": 45, "mem": 25,
+        "diskIO": 0, "bandwith": 200
+
+
+
+    }, 
+    {
+        "stat": "ok",
+        "id": "VR12",
+        "servername": "Server_12",
+        "cpu": 45, "mem": 25,
+        "diskIO": 0, "bandwith": 200
+
+
+
+    }, 
+    {
+        "stat": "ok",
+        "id": "VR13",
+        "servername": "Server_13",
+        "cpu": 45, "mem": 25,
+        "diskIO": 0, "bandwith": 200
+
+
+
+    }, 
+    {
+        "stat": "ok",
+        "id": "VR14",
+        "servername": "Server_14",
+        "cpu": 45, "mem": 25,
+        "diskIO": 0, "bandwith": 200
+
+
+
+    }, 
+    {
+        "stat": "ok",
+        "id": "VR15",
+        "servername": "Server_15",
+        "cpu": 45, "mem": 25,
+        "diskIO": 0, "bandwith": 200
+
+
+
+    },
+    {
+        "stat": "ok",
+        "id": "VR16",
+        "servername": "Server_16",
+        "cpu": 45, "mem": 25,
+        "diskIO": 0, "bandwith": 200
+
+
+
+    }, 
+    {
+        "stat": "ok",
+        "id": "VR17",
+        "servername": "Server_17",
+        "cpu": 45, "mem": 25,
+        "diskIO": 0, "bandwith": 200
+
+
+
+    }, 
+    {
+        "stat": "ok",
+        "id": "VR018",
+        "servername": "Server_18",
+        "cpu": 45, "mem": 25,
+        "diskIO": 0, "bandwith": 200
+
+
+
+    }, 
+    {
+        "stat": "ok",
+        "id": "VR19",
+        "servername": "Server_19",
+        "cpu": 45, "mem": 25,
+        "diskIO": 0, "bandwith": 200
+
+
+
+    }, 
+    {
+        "stat": "ok",
+        "id": "VR20",
+        "servername": "Server_20",
+        "cpu": 45, "mem": 25,
+        "diskIO": 0, "bandwith": 200
+
+
+
     }
 
 ]

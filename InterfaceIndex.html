@@ -1,8 +1,10 @@
 
+
 <!DOCTYPE html>
 
 <head> 
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="maincss.css" />
     <style>
         body{margin:10px;}
         rect {stroke:black;fill:white;}
@@ -10,19 +12,18 @@
     </style></head>
 <body>
     <script src="http://mbostock.github.com/d3/d3.v2.min.js"></script>
+    <div class="top"></div>
+    <div class="svg_element">
+
+    </div>
+
+    <script>
 
 
-      <script>
-        var width = 900,
-                height = 300,
-                margin = 50;
-
-        var cwidth = 400, cheight = 300, cmargin = 10, maxr = 4;
+        var cwidth = 460, cheight = 700, cmargin = 20, maxr = 4;
 
         var svg = d3.select(".svg_element").append("svg");
-        var x = 100;
-        var y = 100;
-        var o = 100;
+
 
 
         //var status = ["ok",  "attention", "warning", "dead"];
@@ -43,7 +44,7 @@
             var g = svg.selectAll("g").data(data).enter()
                     .append("g")
                     .attr("transform", function(d, i) {
-                return "translate(" + (400 * i) + ",1)";
+                return "translate(" + (460 * i) + ",1)";
             });
             // we add a rect element with a title element
             // so that mousing over the cell will tell us which continent it is
@@ -80,30 +81,28 @@
                     // throwing in a title element
                     .append("title")
                     .text(function(d) {
-                return d.servername;
-            });
+                return d.servername + ", cpu = " + d.cpu + ", memory = " + d.mem + ", diskIO = " + d.cpu + ", bandwidth = " + d.bandwith;
+                
+            })
+                   
 
             // finally, we animate our marks in position
 
-            g.selectAll("circle").transition().duration(100)
+            g.selectAll("circle").transition()
                     .attr("r", 10)
                     .attr("cx", function(d) {
-                return x(+d.cpu);
+                return cmargin + Math.random() * (cwidth - cmargin - 50);
             })
                     .attr("cy", function(d) {
-                return y(+d.mem);
-            })
-                    .style("opacity", function(d) {
-                return o(d.diskIO);
-            })
-                    .style("opacity", function(d) {
-                return o(+d.bandwith);
+                return cmargin + Math.random() * (cheight - cmargin - 50);
             });
+
+
 
 
         });
 
     </script>
-
+    <div class="bottom"></div>
 </body>
 </html>
